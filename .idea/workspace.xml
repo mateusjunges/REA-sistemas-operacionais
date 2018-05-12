@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="369740d2-1ce9-4235-b12b-4c20e8cbba71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatars/user-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatars/user-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatars/user-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatars/user-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/avatars/user-05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/atom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/blackberry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/dropbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/envato.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/firefox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/joomla.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/magento.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/mozilla.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/redhat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/ubuntu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clients/wordpress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/email-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hero-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo-footer.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo-footer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/photoswipe/default-skin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/photoswipe/default-skin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/photoswipe/preloader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/gallery/g-beetle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/gallery/g-grow-green.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/gallery/g-guitarist.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/gallery/g-palmeira.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/gallery/g-shutterbug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/gallery/g-woodcraft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/grow-green.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/grow-green@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/guitarist.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/guitarist@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/lady-shutterbug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/lady-shutterbug@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/palmeira.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/palmeira@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/the-beetle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/the-beetle@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/woodcraft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/woodcraft@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sample-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/wheel-1000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/wheel-2000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/wheel-500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pace.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="264" column="46" selection-start-line="264" selection-start-column="46" selection-end-line="264" selection-end-column="46" />
+            <state relative-caret-position="294">
+              <caret line="14" column="42" selection-end-line="350" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -79,7 +29,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="1659">
               <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
             </state>
           </provider>
@@ -88,8 +38,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3297">
-              <caret line="211" column="30" lean-forward="true" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
+            <state relative-caret-position="4368">
+              <caret line="211" column="30" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -159,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,7 +131,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,12 +163,13 @@
       <option name="presentableId" value="Default" />
       <updated>1526156050885</updated>
       <workItem from="1526156054243" duration="1068000" />
-      <workItem from="1526157393239" duration="4780000" />
+      <workItem from="1526157393239" duration="5162000" />
+      <workItem from="1526162728376" duration="220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5848000" />
+    <option name="totallyTimeSpent" value="6450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -236,8 +187,8 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,33 +203,43 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="294">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pace.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modernizr.js">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1659">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4431">
+          <caret line="211" column="30" lean-forward="true" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="748">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles.html" />
+    <entry file="file://$PROJECT_DIR$/js/pace.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modernizr.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles.html" />
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -290,23 +251,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
+        <state relative-caret-position="1659">
           <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3297">
-          <caret line="211" column="30" lean-forward="true" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
+        <state relative-caret-position="4368">
+          <caret line="211" column="30" selection-start-line="211" selection-start-column="30" selection-end-line="211" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -315,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="264" column="46" selection-start-line="264" selection-start-column="46" selection-end-line="264" selection-end-column="46" />
+        <state relative-caret-position="294">
+          <caret line="14" column="42" selection-end-line="350" selection-end-column="7" />
         </state>
       </provider>
     </entry>
