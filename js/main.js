@@ -156,7 +156,7 @@
     * ------------------------------------------------------ */
     var clStatCount = function() {
         
-        var statSection = $(".about-stats"),
+        var statSection = $(".conteudo-stats"),
             stats = $(".stats__count");
 
         statSection.waypoint({
@@ -209,7 +209,7 @@
     * ------------------------------------------------------ */
     var clSlickSlider = function() {
 
-        $('.clients').slick({
+        $('.sobrenos').slick({
             arrows: false,
             dots: true,
             infinite: true,
@@ -249,7 +249,7 @@
             ]
         });
 
-        $('.testimonials').slick({
+        $('.it').slick({
             arrows: true,
             dots: false,
             infinite: true,

@@ -35,15 +35,15 @@
  *      ## home content
  *      ## home social 
  *      ## home animations
- *  # about
- *      ## about stats
- *  # services
- *      ## services list
+ *  # introducao
+ *      ## introducao stats
+ *  # descs
+ *      ## descs list
  *  # works
  *      ## bricks/masonry
- *  # clients
+ *  # sobrenos
  *      ## slider
- *      ## testimonials
+ *      ## it
  *  # contact
  *      ## loader animation
  *  # footer
@@ -96,7 +96,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: #39b54a;
+    color: grey;
 }
 
 a:hover, a:active {
@@ -367,7 +367,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #39b54a;
+    background: grey;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -376,7 +376,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #39b54a;
+    color: grey;
 }
 
 dd {
@@ -502,7 +502,8 @@ form,
 }
 
 .pace .pace-progress {
-    background: #39b54a;
+    /*background: grey;*/
+    background: grey;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -545,7 +546,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #39b54a;
+    background-color: grey;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -772,7 +773,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #39b54a;
+    -webkit-text-fill-color: grey;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -832,8 +833,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #39b54a;
-    border-color: #39b54a;
+    background: grey;
+    border-color: grey;
     color: #FFFFFF;
 }
 
@@ -872,8 +873,8 @@ input[type="button"].btn--primary:focus {
 
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #39b54a;
-    color: #39b54a;
+    border: 0.2rem solid grey;
+    color: grey;
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
@@ -1101,7 +1102,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: #39b54a;
+    color: grey;
 }
 
 .stats-tabs li a em {
@@ -1246,8 +1247,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #39b54a;
+    /*color: grey;*/
     margin-top: 0;
+    color: grey;
     margin-bottom: 0;
 }
 
@@ -1351,7 +1353,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-    .s-clients {
+    .s-sobrenos {
         padding-bottom: 17.4rem;
     }
     .section-header.has-bottom-sep::before {
@@ -1420,7 +1422,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #39b54a;
+    background: grey;
 }
 
 
@@ -1513,7 +1515,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #39b54a;
+    color: grey;
 }
 
 .header-nav p {
@@ -1651,7 +1653,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #39b54a;
+    color: grey;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1859,8 +1861,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #39b54a;
-    border-right: 2px solid #39b54a;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
     content: '';
     display: block;
     height: 8px;
@@ -1884,7 +1886,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #39b54a;
+    background-color: grey;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -1894,17 +1896,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## home social 
  * ------------------------------------------------------------------- */
-.home-social {
-    font-family: "montserrat-regular", sans-serif;
-    list-style: none;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    right: 5.4rem;
-    -webkit-transform: translate3d(0, -50%, 0);
-    -ms-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0);
-}
 
 .home-social a {
     color: white;
@@ -1944,7 +1935,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #39b54a;
+    color: grey;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2194,22 +2185,22 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # about
+ * # introducao
  *
  * ------------------------------------------------------------------- */
-.s-about {
+.s-introducao {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: grey;
     color: #010507;
     position: relative;
 }
 
-.s-about .section-header.has-bottom-sep::before {
+.s-introducao .section-header.has-bottom-sep::before {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.about-desc {
+.introducao-desc {
     font-size: 2.4rem;
     line-height: 1.75;
     text-align: center;
@@ -2218,9 +2209,9 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## about stats
+ * ## introducao stats
  * ------------------------------------------------------------------- */
-.about-stats {
+.introducao-stats {
     text-align: center;
 }
 
@@ -2257,7 +2248,7 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
-.about__line {
+.introducao__line {
     display: block;
     width: 2px;
     height: 10.2rem;
@@ -2270,18 +2261,18 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * about
+ * introducao
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .about-desc {
+    .introducao-desc {
         font-size: 2.2rem;
         max-width: 940px;
     }
-    .about-stats {
+    .introducao-stats {
         padding-top: 3rem;
         padding-bottom: 3.9rem;
     }
-    .about-stats {
+    .introducao-stats {
         max-width: 800px;
     }
     .stats__col {
@@ -2296,7 +2287,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 800px) {
-    .about-desc {
+    .introducao-desc {
         font-size: 2rem;
         max-width: 600px;
     }
@@ -2309,19 +2300,19 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 700px) {
-    .about__line {
+    .introducao__line {
         right: 5.5rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-about {
+    .s-introducao {
         padding-top: 12rem;
     }
-    .about-desc {
+    .introducao-desc {
         font-size: 1.9rem;
     }
-    .about-stats {
+    .introducao-stats {
         padding-top: 0;
     }
     .stats__col {
@@ -2347,13 +2338,13 @@ html.no-csstransitions .home-content__main {
     .stats__col:nth-child(n) {
         border: none;
     }
-    .about__line {
+    .introducao__line {
         height: 7.2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .about-desc {
+    .introducao-desc {
         font-size: 1.8rem;
     }
     .stats__count {
@@ -2364,10 +2355,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # services
+ * # descs
  *
  * ------------------------------------------------------------------- */
-.s-services {
+.s-descs {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
     background-color: #FFFFFF;
@@ -2377,35 +2368,35 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## services list
+ * ## descs list
  * ------------------------------------------------------------------- */
-.services-list {
+.descs-list {
     margin-top: 6rem;
 }
 
-.services-list .service-item {
+.descs-list .desc-item {
     margin-bottom: .9rem;
 }
 
-.services-list .service-item h3 {
+.descs-list .desc-item h3 {
     margin-top: 0;
 }
 
-.services-list .service-item:nth-child(2n+1) {
+.descs-list .desc-item:nth-child(2n+1) {
     padding-right: 50px;
 }
 
-.services-list .service-item:nth-child(2n+2) {
+.descs-list .desc-item:nth-child(2n+2) {
     padding-left: 50px;
 }
 
-.services-list .service-text {
+.descs-list .desc-text {
     margin-left: 7.8rem;
 }
 
-.services-list .service-icon {
+.descs-list .desc-icon {
     float: left;
-    color: #39b54a;
+    color: grey;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2413,49 +2404,49 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * descs
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .services-list {
+    .descs-list {
         max-width: 1000px;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .descs-list .desc-item:nth-child(2n+1) {
         padding-right: 30px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .descs-list .desc-item:nth-child(2n+2) {
         padding-left: 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .services-list h3 {
+    .descs-list h3 {
         font-size: 2.5rem;
     }
-    .services-list .service-item:nth-child(2n+1) {
+    .descs-list .desc-item:nth-child(2n+1) {
         padding-right: 20px;
     }
-    .services-list .service-item:nth-child(2n+2) {
+    .descs-list .desc-item:nth-child(2n+2) {
         padding-left: 20px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .services-list {
+    .descs-list {
         margin-top: 4.2rem;
         max-width: 500px;
         text-align: center;
     }
-    .services-list .service-item:nth-child(n) {
+    .descs-list .desc-item:nth-child(n) {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .services-list h3 {
+    .descs-list h3 {
         font-size: 3rem;
     }
-    .services-list .service-text {
+    .descs-list .desc-text {
         margin-left: 0;
     }
-    .services-list .service-icon {
+    .descs-list .desc-icon {
         font-size: 4.5rem;
         float: none;
         margin-top: 0;
@@ -2463,24 +2454,24 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-services {
+    .s-descs {
         padding-top: 12rem;
     }
-    .services-list .service-item:nth-child(n) {
+    .descs-list .desc-item:nth-child(n) {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .services-list h3 {
+    .descs-list h3 {
         font-size: 2.5rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .services-list .service-item:nth-child(n) {
+    .descs-list .desc-item:nth-child(n) {
         padding-right: 0;
         padding-left: 0;
     }
-    .services-list h3 {
+    .descs-list h3 {
         font-size: 2.5rem;
     }
 }
@@ -2726,10 +2717,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # clients
+ * # sobrenos
  *
  * ------------------------------------------------------------------- */
-.s-clients {
+.s-sobrenos {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
     background-color: #e6e6e6;
@@ -2741,14 +2732,14 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## slider
  * ------------------------------------------------------------------- */
-.clients-outer {
+.sobrenos-outer {
     margin-top: 3.6rem;
     padding-bottom: 9rem;
     text-align: center;
     position: relative;
 }
 
-.clients__slide {
+.sobrenos__slide {
     display: block;
     opacity: .55;
     padding: 1.5rem 2.8rem;
@@ -2756,22 +2747,22 @@ html.no-csstransitions .home-content__main {
     transition: opacity 0.5s ease-in-out;
 }
 
-.clients__slide:hover, .clients__slide:focus {
+.sobrenos__slide:hover, .sobrenos__slide:focus {
     opacity: 1;
 }
 
 
 /* ------------------------------------------------------------------- 
- * ## testimonials
+ * ## it
  * ------------------------------------------------------------------- */
-.clients-testimonials {
+.sobrenos-it {
     margin-top: 4.2rem;
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
 }
 
-.clients-testimonials::before {
+.sobrenos-it::before {
     content: "";
     display: block;
     height: 1px;
@@ -2786,11 +2777,11 @@ html.no-csstransitions .home-content__main {
     transform: translateX(-50%);
 }
 
-.clients-testimonials .testimonials {
+.sobrenos-it .it {
     margin: 0 10%;
 }
 
-.clients-testimonials .testimonials p {
+.sobrenos-it .it p {
     font-family: "lora-regular", serif;
     font-size: 3rem;
     line-height: 1.8;
@@ -2798,33 +2789,33 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 6rem;
 }
 
-.clients-testimonials .testimonials__slide {
+.sobrenos-it .it__slide {
     padding: 0 0 3rem 0;
 }
 
-.clients-testimonials .testimonials__avatar {
+.sobrenos-it .it__avatar {
     height: 8.4rem;
     width: 8.4rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
 
-.clients-testimonials .testimonials__name, 
-.clients-testimonials .testimonials__pos {
+.sobrenos-it .it__name, 
+.sobrenos-it .it__pos {
     display: block;
 }
 
-.clients-testimonials .testimonials__name {
+.sobrenos-it .it__name {
     font-family: "montserrat-semibold", sans-serif;
     color: #000000;
 }
 
-.clients-testimonials .testimonials__pos {
+.sobrenos-it .it__pos {
     font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
 }
 
-.clients-testimonials .testimonials .slick-arrow {
+.sobrenos-it .it .slick-arrow {
     position: absolute;
     top: 7.2rem;
     width: 66px;
@@ -2845,82 +2836,82 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
 }
 
-.clients-testimonials .testimonials .slick-prev {
+.sobrenos-it .it .slick-prev {
     left: -130px;
     background-image: url("../images/left-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-next {
+.sobrenos-it .it .slick-next {
     right: -130px;
     background-image: url("../images/right-arrow.png");
 }
 
-.clients-testimonials .testimonials .slick-dots {
+.sobrenos-it .it .slick-dots {
     margin-top: -0.6px;
 }
 
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * clients
+ * sobrenos
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .clients-testimonials .testimonials {
+    .sobrenos-it .it {
         margin: 0 12%;
     }
-    .clients-testimonials .testimonials p {
+    .sobrenos-it .it p {
         font-size: 2.6rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .sobrenos-it .it .slick-prev {
         left: -100px;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .sobrenos-it .it .slick-next {
         right: -100px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .clients-testimonials .testimonials p {
+    .sobrenos-it .it p {
         font-size: 2.2rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .clients-testimonials::before {
+    .sobrenos-it::before {
         width: 400px;
     }
-    .clients-testimonials .testimonials {
+    .sobrenos-it .it {
         margin: 0 2rem;
     }
-    .clients-testimonials .testimonials .slick-arrow {
+    .sobrenos-it .it .slick-arrow {
         top: auto;
         bottom: 3rem;
     }
-    .clients-testimonials .testimonials .slick-prev {
+    .sobrenos-it .it .slick-prev {
         left: 0;
     }
-    .clients-testimonials .testimonials .slick-next {
+    .sobrenos-it .it .slick-next {
         right: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-clients {
+    .s-sobrenos {
         padding-top: 12rem;
     }
-    .clients-testimonials::before {
+    .sobrenos-it::before {
         width: 250px;
     }
-    .clients-testimonials .testimonials {
+    .sobrenos-it .it {
         margin: 0;
     }
-    .clients-testimonials .testimonials p {
+    .sobrenos-it .it p {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .clients-testimonials .testimonials p {
+    .sobrenos-it .it p {
         font-size: 1.9rem;
     }
 }
@@ -2974,7 +2965,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #39b54a;
+    background: grey;
 }
 
 .s-contact .form-field label::after {
@@ -2985,14 +2976,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #39b54a;
+    border-right: 5px solid grey;
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #39b54a;
+    background-color: grey;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3019,7 +3010,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #39b54a;
+    color: grey;
 }
 
 .contact-content input[type="email"],
@@ -3046,7 +3037,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #39b54a;
+    border-bottom: 1px solid grey;
 }
 
 .contact-content button,
@@ -3132,12 +3123,12 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-social li a {
-    color: white;
+    color: black;
 }
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #39b54a;
+    color: grey;
 }
 
 .contact-social li:last-child {
@@ -3160,7 +3151,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .message-success {
-    color: #39b54a;
+    color: grey;
 }
 
 .message-warning i, .message-success i {
@@ -3352,7 +3343,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus, footer a:active {
-    color: #39b54a;
+    color: grey;
 }
 
 footer .row {
@@ -3444,8 +3435,8 @@ footer .row {
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #39b54a;
-    border-color: #39b54a;
+    background: grey;
+    border-color: grey;
     padding: 0 20px;
 }
 
