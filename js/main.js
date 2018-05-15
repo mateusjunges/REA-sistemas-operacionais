@@ -432,7 +432,6 @@
         clAlertBoxes();
         clContactForm();
         clAOS();
-        clAjaxChimp();
         clBackToTop();
 
     })();
