@@ -217,7 +217,7 @@
             </div>
         </div>
         <div class="row sobrenos-it" data-aos="fade-up">
-            <div class="col-full">
+            <div class="col-full" id="carousel">
                 <div class="it">
                     <div class="it__slide">
                         <p></p>
@@ -414,6 +414,14 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           $("#carousel").carousel({
+              interval: 200,
+           });
+        });
+    </script>
 
 </body>
 
