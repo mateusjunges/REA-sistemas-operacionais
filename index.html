@@ -163,6 +163,51 @@
             </div>
         </div>
     </section>
+	
+	   <!-- =====================explicacaothreads================================= -->
+    <section id='explicThread' class="s-introducao">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h4 class="display-2" style="color: #FFFFFF">Como funciona a Thread Pool do Maria DB</h4>
+            </div>
+        </div>
+        <div class="row introducao-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                O sistema de threads implementado no MariaDB é baseado no modelo Thread Pool.
+                </p>
+				<p>
+				Uma pool de threads é uma coleção de threads, geralmente pré-instanciadas, que permanecem disponíveis para realizar tarefas.
+				</p>
+				<img src="images/Threadpool1.jpg">
+				<p>
+				De forma simplificada, o funcionamento da pool de threads parte do princípio que, mantendo um número de threads
+				aguardando que tarefas sejam alocadas para elas, o desempenho é melhorado por não precisar que novas threads tenham que ser
+				criadas e destruídas frequentemente para a execução de tarefas curtas.
+				</p>
+            </div>
+        </div>
+		<br/>
+        <div class="row introducao-desc" data-aos="fade-up">
+            <div class="col-full">
+                <strong style="font-size: 2.5vw">
+                Por que o MariaDB faz uso da Thread Pool?
+                </strong>
+				<p>Sendo um sistema de gerenciamento de banco de dados - <i>database management system</i> ou DBMS - o MariaDB é um software
+				escalável para servidores. Ou seja, é necessário que possa manter um alto desempenho mesmo que exista um grande número de
+				clientes fazendo uso do servidor em questão.</p>
+				<p>Tradicionalmente, o MySQL implementava uma thread para cada conexão de cliente - e se há muitas threads ativas, o desempenho
+				pode diminuir drasticamente, com constantes trocas de contexto e uso excessivo dos buffers de memória do banco. O MariaDB resolve
+				este problema mantendo um número de threads menor que o número de clientes, com as tarefas entrando na Thread Pool à medida que
+				existem threads disponíveis. Isso também evita que threads tenham que ser criadas e destruídas para cada conexão de cliente, conforme
+				mencionado anteriormente.</p>
+            </div>
+        </div>
+    </section>
+    <!-- descs
+    ================================================== -->
+	
+	
     <section id="sobrenos" class="s-sobrenos">
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
@@ -255,6 +300,8 @@
                         </div>
                     </div>
                     <div class="it__slide">
+						<p>
+						</p>
                         <img src="images/about/rafaeldemattos.jpg" alt="" class="it__avatar">
                         <div class="it__info">
                             <span class="it__name">Rafael de Mattos</span>
@@ -311,11 +358,11 @@
                 </div>
             </div>
             <div class="col-six tab-full right footer-subscribe">
-                <h3 id="tituloFooter">A - Sistemas Operacionais</h3>
+                <h3 id="tituloFooter">Sistemas Operacionais - Engenharia de Computação UEPG</h3>
                 <div class="div">
                     <ul id="infoFooter">
                         <ol>Professor: <a href="https://www.facebook.com/dierone.foltran">Dierone Foltran</a></ol>
-                        <ol><a href="http://deinfo.uepg.br/~alunoso/">Acesse Outros REAS</a></ol>
+                        <ol><a href="http://deinfo.uepg.br/~alunoso/">Acessar Outros REAs →</a></ol>
                     </ul>
                 </div>
             </div>
