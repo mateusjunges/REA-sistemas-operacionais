@@ -183,7 +183,7 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <!--<h3 class="subhead">Mariadb</h3>-->
-                <h1 class="display-2" style="color: #FFFFFF">Entenda o funcionamento do banco de dados (Eu to fazendo! - Rafael)</h1>
+                <h1 class="display-2" style="color: #FFFFFF">Entenda o funcionamento do banco de dados</h1>
             </div>
         </div>
         <div class="row descs-list block-1-2 block-tab-full">
@@ -230,6 +230,10 @@
                 pelo handler.<br>
                 Abaixo segue o passo a passo de como funciona todo o mecanismo do FederatedX:
             </p>
+            <div class="federated">
+                <img src="images/SE-image.png">
+            </div>
+            <br>
             <ol style="color: #FFFFFF">
                 <li>
                     O usuário emite uma instrução na tabela local onde está o mecânismo FederatedX.
@@ -261,6 +265,13 @@
                     pelas estatísticas do banco de dados de origem.
                 </li>
             </ol>
+            <h3 style="color: #FFFFFF">Percona XtraDB Storage Engine</h3>
+            <p style="color: #FFFFFF">
+                O MariaDB por padrão utiliza um aprimoramento do mecanismo de armazenamento InnoDB, mantendo os mesmos prefixos <br>
+                sendo compatível com a arquitetura <i>MVCC</i> avançada do InnoDB e com o design <a href="https://mariadb.com/kb/en/library/acid-concurrency-control-with-transactions/"><i>ACID</i></a>
+                (Concurrency Control with Transactions).<br>
+                Na prática ele é projetado para o uso de muitos núcleos, o que potencializa seu uso de memória.
+            </p>
         </div>
     </section>
 
