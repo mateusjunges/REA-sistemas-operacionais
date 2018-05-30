@@ -187,20 +187,85 @@
             </div>
         </div>
         <div class="row descs-list block-1-2 block-tab-full">
-            <!-- Texto... -->
-            <p>
+            <!-- Explicação do funcionamento -->
+            <p style="color: #FFFFFF">
                 O funcionamento desse serviço de banco de dados deve ser estudado desde seção de
                 desenvolvimento, onde o principal objetivo era trazer um funcionamento melhor em
                 ambiente web e uma conexão rápida. Com isso, pode-se dizer que a forma de tratar
                 carregamentos é muito mais ágil do que qualquer outra base de dados, unindo um
-                único software versátil para várias versões de plataformas de sistemas e aplicação
-                
+                único software versátil para várias versões de plataformas de sistemas e aplicação.<br>
+                Introdutóriamente devemos saber que existe a engine de armazenamento chamada de Federated
+                que utiliza dois banco de dados, um que irá manipular a tabela e outro que irá servir de
+                host para o banco de dados própriamente dito.
             </p>
+            <p style="color: #FFFFFF">
+                Olhando mais para aplicações web o MariaDB pode ser usado por aplicações independentes
+                (desenvolvidas por empresas de negócios, mobile e entre outras) rodando na nuvem ou
+                localmente. Para tudo isso acontecer é necessário conhecermos as ferramentas que fazem
+                este software funcionar.
+            </p>
+            <h2 style="color: #FFFFFF">FederatedX Storage Engine</h2>
+            <p style="color: #FFFFFF">
+                A ferramenta FederatedX é uma engine de armazenamento que funciona tanto no MariaDB
+                quanto no MySQL, através da libmysql que serve para a comunicação com a fonte de dados
+                na qual está estritamente em um banco de dados relacional MySQL.
+            </p>
+            <p style="color: #FFFFFF">
+                Toda engine de armazenamento deriva de uma biblioteca padrão <i>handler</i> que gerencia
+                todas as funções de armazenamento, porém ao invés de implementar os métodos com instruções
+                SQL já prontos a FederatedX constrói as instruções SQL para funcionarem no servidor remoto .
+            </p>
+            <h3 style="color: #FFFFFF">Por dentro da engine...</h3>
+            <p style="color: #FFFFFF">
+                Em casos gerais, suponha que criamos uma tabela chamada <tt>pessoa</tt>, um arquivo chamado <tt>pessoa.MYD</tt>
+                (arquivo com os dados, própriamente dito) será criado. O handler irá ler, incluir, excluir e atualizar os dados neste arquivo. Os dados informados
+                (possivelmente os atributos do projeto) serão armazenados em um formato específico, portanto quando
+                for feita a leitura dos dados devem ser lidos nos respectivos campos, para incluir os campos devem
+                estar no devido formato para ser gravado com sucesso no arquivo. <br>
+                Quando trabalhamos com FederatedX as informações de cada tabela não são armazenadas localmente e sim
+                em um banco de dados externo, com isso será necessário o uso de uma biblioteca de instruções MySQL para
+                ler, incluir, excluir e atualizar os dados. As informações serão trazidas através de uma <i>query</i>
+                (chamada) SQL <tt>"SELECT * FROM pessoa"</tt>, dessa forma será necessário ler todas as linhas da tabela,
+                usando a query <tt> mysql_fetch_row</tt> que depois poderá ser convertida para o formato desejado definido
+                pelo handler.<br>
+                Abaixo segue o passo a passo de como funciona todo o mecanismo do FederatedX:
+            </p>
+            <ol style="color: #FFFFFF">
+                <li>
+                    O usuário emite uma instrução na tabela local onde está o mecânismo FederatedX.
+                </li>
+                <br>
+                <li>O mecânismo usa a biblioteca handler para mysql -<i>libmysql</i>- para usar os métodos necessários <br>
+                    para conseguir realizar o armazenamento demandado pelo mecânismo, no qual terá <br>
+                    acesso à tabela com os respectivos campos também.
+                </li>
+                <br>
+                <li>
+                    Após isso, o FederatedX contrói a instrução SQL necessária para interagir com o banco <br>
+                    de dados externo.
+                </li>
+                <br>
+                <li>
+                    A instrução construída é enviada para o segundo banco de dados, onde será lida e enviará <br>
+                    o resultado para o banco de dados de origem.
+                </li>
+                <br>
+                <li>
+                    Se o resultado enviado for o conjunto de dados do banco de dados externo, o banco de origem <br>
+                    irá fazer uma iteração na tabela (cuja esta sendo manipulada) com os dados do resultado convertidos <br>
+                    para o formato adequado pelo handler.
+                </li>
+                <br>
+                <li>
+                    Senão o resultado será o número de linhas da tabela que está no banco externo, que será interpretado <br>
+                    pelas estatísticas do banco de dados de origem.
+                </li>
+            </ol>
         </div>
     </section>
 
 
-	   <!-- =====================explicacaothreads================================= -->
+	   <!-- =====================explicacao threads================================= -->
     <section id='explicThread' class="s-introducao">
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
