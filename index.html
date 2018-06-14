@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -283,14 +283,42 @@
                 deleção, e  claro, a busca. <br>
                 Clique em um trecho de código para ver com mais detalhes como é a implementação:
             </p>
-            <code>int write_row(uchar *buf);</code>
-            <code>int update_row(const uchar *old_data, const uchar *new_data);</code>
-            <code>int delete_row(const uchar *buf);</code>
+            <code>int ha_federatedx::write_row(uchar *buf);</code> <br>
+            <p style="color: #FFFFFF">
+                O método acima tem a função de acrescentar uma linha na tabela, através do parâmetro <code style="color: #000000">*buf</code>
+                que chama a função <code style="color: #000000">buf()</code> que retorna um byte de dados de um array podendo utilizar esses dados
+                para extrair informações.
+            </p>
+            <code>void ha_federatedx::start_bulk_insert(ha_rows rows, uint flags);</code> <br>
+            <p style="color: #FFFFFF">
+                Método que prepara a engine de armazenamento para receber a inserção da nova linha, utlizando o manipulador de linhas
+                <code style="color: #000000">ha_rows rows</code>. Neste caso a função espera dois tipos de saída do servidor, caso o servidor desconheça o valor de linhas
+                que seriam inseridas na tabela o retorno será 0, caso contrário será o número de linhas. Deve-se lembrar que ao terminar essa preparação é necessário
+                que o método <code style="color: #000000">int ha_federatedx::end_bulk_insert()</code> seja chamado para finalizar a preparação.
+            </p>
+            <code>void ha_federatedx::update_auto_increment(void);</code> <br>
+            <p style="color: #FFFFFF">
+                Esta função tem o dever de garantir ao banco de dados externo funcione correramente em relação as inserções na tabela. Sempre
+                após uma inserção a função chama uma outra função chamada <code style="color: #000000">last_insert_id()</code> que definirá um novo id no campo que é
+                auto_increment, esse processo é feito via <code style="color: #000000">thd-> insert_id (ID))</code>.
+            </p>
+            <code>int ha_federatedx::update_row(const uchar *old_data, const uchar *new_data)</code> <br>
+            <p style="color: #FFFFFF">
+                Sim, o <code style="color: #000000">update_row()</code> faz o que você espera, atualiza uma linha.<b>"UUUUAAAAU"</b>. O old_data terá o registro da linha anterior, enquanto
+                o new_data terá os dados mais recentes. Tenha em mente que o servidor pode fazer atualizações com base em requisições se um ORDER BY for usado. A requisição
+                não é garantida.
+            </p>
+            <code>int ha_federatedx::delete_row(const uchar *buf)</code> <br>
+            <p style="color: #FFFFFF">
+                Acredite se quiser, esta função apaga uma linha! <code style="color: #000000">buf</code> conterá uma cópia da linha a ser excluída. O servidor irá chamar isto logo após a linha atual ter sido chamada
+                (de ou uma chamada <code style="color: #000000">rnd_next()</code> ou de índice anterior). Se você mantiver um ponteiro para a última linha ou puder acessar uma primary_key faça a eliminação um pouco mais fácil.
+                Tenha em mente que o servidor não garante exclusões consecutivas. Requisições com ORDER BY podem ser usadas.
+            </p>
         </div>
     </section>
 
 
-	   <!-- =====================explicacao threads================================= -->
+	   <!-- ===================== explicacao threads ================================= -->
     <section id='explicThread' class="s-introducao">
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
