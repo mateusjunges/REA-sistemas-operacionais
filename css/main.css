@@ -2803,6 +2803,7 @@ html.no-csstransitions .home-content__main {
 .sobrenos-it .it__name, 
 .sobrenos-it .it__pos {
     display: block;
+    color: black;
 }
 
 .sobrenos-it .it__name {

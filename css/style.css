@@ -16,14 +16,26 @@
     color: #FFFFFF;
 }
 #codigos{
-    background-color: #777777;
+    background-color: white;
+    color: #000;
 }
 
 .text-detail{
-    color: color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .federated{
     display: block;
     margin-left: 15%;
+}
+.thread_init{
+
+}
+.img-t_init{
+    width: 80%;
+    text-align: justify;
+}
+#link{
+    text-decoration: none;
+    color: white;
 }
