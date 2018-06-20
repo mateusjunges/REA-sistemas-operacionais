@@ -363,51 +363,68 @@
     <!--================================================== -->
 
 	   <!-- =====================codigos================================= -->
-    <section id='codigos' class="s-introducao">
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h4 class="display-2">Trechos de código do sistema de threads</h4>
+        <section id='codigos' class="s-introducao">
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h4 class="display-2">Mutex no MariaDB</h4>
+                </div>
+                <hr>
+
+                <div class="ladolado">
+                    <div class="code">
+                        <pre class="prettyprint lang-cpp">
+    struct mutex : private noncopyable {
+        friend struct condition;
+            mutex() {
+                if (pthread_mutex_init(&mtx, 0) != 0) {
+                    fatal_abort("pthread_mutex_init");
+                }
+            }
+            mutex() {
+                if (pthread_mutex_destroy(&mtx) != 0) {
+                    fatal_abort("pthread_mutex_destroy");
+                }
+            }
+            void lock() const {
+                if (pthread_mutex_lock(&mtx) != 0) {
+                    fatal_abort("pthread_mutex_lock");
+                }
+            }
+            void unlock() const {
+                if (pthread_mutex_unlock(&mtx) != 0) {
+                fatal_abort("pthread_mutex_unlock");
+            }
+        }
+    private:
+        mutable pthread_mutex_t mtx;
+    };
+                        </pre>
+                    </div>
+                    <div class="code-explain">
+                        <h2 id="code-explain-title"><b>Sistema de exclusão mútua</b></h2>
+                        <p>
+                            O MariaDB implementa o sistema de exclusão mútua, que é uma
+                            propriedade de controle de concorrência, usado com o propósito
+                            de prevenir o acesso de dois processos ao mesmo tempo a um
+                            mesmo recurso compartilhado. O sistema de exclusão mútua (mutex)
+                            faz uso de semáforos. Quando um semáforo bloqueia o acesso a um
+                            determinado recurso compartilhado, outro processo (ou thread)
+                            não consegue acessá-lo. Quando o processo que estava utilizando
+                            libera o acesso, este recurso é liberado. No código, é mostrado as
+                            funções <code class="ce">mutex_init</code>, que inicia o mutex referenciado
+                            pelo parâmetro <i>mtx</i>. A função <code class="ce">mutex_destroy</code>,
+                            que destrói o mutex referenciado pelo <i>mtx</i>, <code class="ce">mutex_lock</code>,
+                            que bloqueia o mutex que é referenciado pelo <i>mtx</i>. Por último, a função <code class="ce">mutex_unlock</code>,
+                            que desbloqueia o objeto mutex referenciado pelo <i>mtx</i>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row introducao-desc" data-aos="fade-up">
+                    <!-- texto -->
+                </div>
             </div>
-            <div class="ladolado">
-                <div class="code">
-                    <pre class="prettyprint lang-cpp">
-struct mutex : private noncopyable {
-    friend struct condition;
-        mutex() {
-            if (pthread_mutex_init(&mtx, 0) != 0) {
-                fatal_abort("pthread_mutex_init");
-            }
-        }
-        mutex() {
-            if (pthread_mutex_destroy(&mtx) != 0) {
-                fatal_abort("pthread_mutex_destroy");
-            }
-        }
-        void lock() const {
-            if (pthread_mutex_lock(&mtx) != 0) {
-                fatal_abort("pthread_mutex_lock");
-            }
-        }
-        void unlock() const {
-            if (pthread_mutex_unlock(&mtx) != 0) {
-            fatal_abort("pthread_mutex_unlock");
-        }
-    }
-private:
-    mutable pthread_mutex_t mtx;
-};
-                    </pre>
-            </div>
-    </div>
-        <div class="row introducao-desc" data-aos="fade-up">
-            <!-- texto -->
-        </div>
-        </div>
-    </section>
+        </section>
     <!--   ================================================== -->
-
-
-
     <section id="sobrenos" class="s-sobrenos">
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
@@ -435,12 +452,7 @@ private:
                                     <a href="https://twitter.com/mateusjungess">
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </a>
-                                </li><!--
-                                <li>
-                                    <a href="https://instagram.com/mateusjungess">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>-->
+                                </li>
                                 <li>
                                     <a href="https://github.com/mateusjunges">
                                         <i class="fa fa-github" aria-hidden="true"></i>
@@ -476,12 +488,8 @@ private:
                                     <a href="https://twitter.com/VictorBegha">
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </a>
-                                </li><!--
-                                <li>
-                                    <a href="">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>-->
+                                </li>
+
                                 <li>
                                     <a href="https://github.com/victorbegha">
                                         <i class="fa fa-github" aria-hidden="true"></i>
@@ -517,12 +525,7 @@ private:
                                     <a href="https://twitter.com/rafamttz16">
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </a>
-                                </li><!--
-                                <li>
-                                    <a href="https://www.instagram.com/rafamtts/">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>-->
+                                </li>
                                 <li>
                                     <a href="https://github.com/rafamttz">
                                         <i class="fa fa-github" aria-hidden="true"></i>
@@ -569,26 +572,6 @@ private:
                 </div>
             </div>
         </div>
-        <div class="row footer-bottom">
-
-			<!--
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright</span>
-                    <span>
-                        <a href="https://github.com/mateusjunges">Mateus Junges</a>
-                        <a href="https://github.com/victorbegha">Victor Begha</a>
-                        <a href="https://github.com/rafamttz">Rafael De Mattos</a>
-                    </span>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
-            </div>-->
-
-        </div>
-
         <div class="row footer-bottom">
             <div class="col-twelve">
                 <div class="go-top">

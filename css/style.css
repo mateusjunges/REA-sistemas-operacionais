@@ -43,6 +43,25 @@
 .prettyprint{
     text-align: left;
 }
+.ladolado{
+    width: 100%;
+    height: auto;
+}
+.ce{
+    color: red;
+}
 .code{
-    width: 55%;
+    display: inline-block;
+    width: 56%;
+    float: left;
+}
+.code-explain{
+    float: right;
+    display: inline-block;
+    width: 43%;
+    height: 100%;
+    text-align: justify;
+}
+#code-explain-title{
+    margin-top: -1.8%;
 }
