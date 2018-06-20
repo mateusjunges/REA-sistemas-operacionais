@@ -40,3 +40,9 @@
     text-decoration: none;
     color: white;
 }
+.prettyprint{
+    text-align: left;
+}
+.code{
+    width: 55%;
+}

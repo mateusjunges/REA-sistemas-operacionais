@@ -299,7 +299,7 @@
                 que seriam inseridas na tabela o retorno será 0, caso contrário será o número de linhas. Deve-se lembrar que ao terminar essa preparação é necessário
                 que o método <code style="color: #000000">int ha_federatedx::end_bulk_insert()</code> seja chamado para finalizar a preparação.
             </p>
-            <code>void ha_federatedx::update_auto_increment(void);</code> <br>
+            <code>void ha_federatedx::update_auto_increment(void);</code><br>
             <p style="color: #FFFFFF">
                 Esta função tem o dever de garantir ao banco de dados externo funcione correramente em relação as inserções na tabela. Sempre
                 após uma inserção a função chama uma outra função chamada <code style="color: #000000">last_insert_id()</code> que definirá um novo id no campo que é
@@ -367,14 +367,42 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h4 class="display-2">Trechos de código do sistema de threads</h4>
-                <div class="thread_init">
-
-                </div>
-        </div>
+            </div>
+            <div class="ladolado">
+                <div class="code">
+                    <pre class="prettyprint lang-cpp">
+struct mutex : private noncopyable {
+    friend struct condition;
+        mutex() {
+            if (pthread_mutex_init(&mtx, 0) != 0) {
+                fatal_abort("pthread_mutex_init");
+            }
+        }
+        mutex() {
+            if (pthread_mutex_destroy(&mtx) != 0) {
+                fatal_abort("pthread_mutex_destroy");
+            }
+        }
+        void lock() const {
+            if (pthread_mutex_lock(&mtx) != 0) {
+                fatal_abort("pthread_mutex_lock");
+            }
+        }
+        void unlock() const {
+            if (pthread_mutex_unlock(&mtx) != 0) {
+            fatal_abort("pthread_mutex_unlock");
+        }
+    }
+private:
+    mutable pthread_mutex_t mtx;
+};
+                    </pre>
+            </div>
+    </div>
         <div class="row introducao-desc" data-aos="fade-up">
             <!-- texto -->
         </div>
-
+        </div>
     </section>
     <!--   ================================================== -->
 
@@ -601,7 +629,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 
 </html>
