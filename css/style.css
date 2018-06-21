@@ -1,0 +1,67 @@
+#tituloFooter{
+    color: #FFFFFF;
+    margin-top: -4%;
+}
+#logoFooter{
+    width: 125%;
+}
+#infoFooter{
+    color: #FFFFFF;
+}
+#funcionamento{
+    background-color: #777777;
+}
+#explicThread{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+#codigos{
+    background-color: white;
+    color: #000;
+}
+
+.text-detail{
+    color: #FFFFFF;
+}
+
+.federated{
+    display: block;
+    margin-left: 15%;
+}
+.thread_init{
+
+}
+.img-t_init{
+    width: 80%;
+    text-align: justify;
+}
+
+#link{
+    text-decoration: none;
+    color: white;
+}
+.prettyprint{
+    text-align: left;
+}
+.ladolado{
+    width: 100%;
+    height: auto;
+}
+.ce{
+    color: red;
+}
+.code{
+    display: inline-block;
+    width: 56%;
+    float: left;
+}
+.code-explain{
+    float: right;
+    display: inline-block;
+    width: 43%;
+    height: 100%;
+    text-align: justify;
+}
+#code-explain-title{
+    margin-top: -1.8%;
+}
