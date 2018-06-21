@@ -77,3 +77,11 @@
     font-size: 18px;
     text-align: justify;
 }
+
+.introducao-desc p, .s-descs li, #explicThread p {
+    text-align: justify;
+}
+
+p {
+    text-indent: 5%;
+}
