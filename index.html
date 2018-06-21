@@ -43,7 +43,7 @@
     <section id="home"
              class="s-home target-section"
              data-parallax="scroll"
-             data-image-src="images/bg.png"
+             data-image-src="images/bg.jpg"
              data-natural-width=3000
              data-natural-height=2000
              data-position-y=center>
@@ -178,24 +178,33 @@
         </div>
     </section>
 
-
 	<!-- ================================================== -->
-    <section id="funcionamento" class="s-descs">
+    
+	
+	<section id="funcionamentoa"
+             class="s-home target-section"
+             data-parallax="scroll"
+             data-image-src="images/bg2.jpg"
+             data-natural-width=3000
+             data-natural-height=2000
+             data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
+            <br><br><br><div class="col-full">
                 <!--<h3 class="subhead">Mariadb</h3>-->
                 <h1 class="display-2" style="color: #FFFFFF">Entenda o funcionamento do banco de dados</h1>
             </div>
         </div>
-        <div class="row descs-list block-1-2 block-tab-full introducao-desc">
+        <div class="row descs-list block-1-2 block-tab-full introducao-desc" data-aos="fade-up">
             <!-- Explicação do funcionamento -->
             <p style="color: #FFFFFF">
                 O funcionamento desse serviço de banco de dados deve ser estudado desde seção de
                 desenvolvimento, onde o principal objetivo era trazer um funcionamento melhor em
                 ambiente web e uma conexão rápida. Com isso, pode-se dizer que a forma de tratar
                 carregamentos é muito mais ágil do que qualquer outra base de dados, unindo um
-                único software versátil para várias versões de plataformas de sistemas e aplicação.<br>
-                Introdutóriamente devemos saber que existe a engine de armazenamento chamada de Federated
+                único software versátil para várias versões de plataformas de sistemas e aplicação.</p>
+                <p style="color: #FFFFFF">Introdutóriamente devemos saber que existe a engine de armazenamento chamada de Federated
                 que utiliza dois banco de dados, um que irá manipular a tabela e outro que irá servir de
                 host para o banco de dados própriamente dito.
             </p>
@@ -222,16 +231,16 @@
                 (arquivo com os dados, própriamente dito) será criado. O handler irá ler, incluir, excluir e atualizar os dados neste arquivo. Os dados informados
                 (possivelmente os atributos do projeto) serão armazenados em um formato específico, portanto quando
                 for feita a leitura dos dados devem ser lidos nos respectivos campos, para incluir os campos devem
-                estar no devido formato para ser gravado com sucesso no arquivo. <br><br/>
-                Quando trabalhamos com FederatedX as informações de cada tabela não são armazenadas localmente e sim
+                estar no devido formato para ser gravado com sucesso no arquivo.</p>
+                <p style="color: #FFFFFF">Quando trabalhamos com FederatedX as informações de cada tabela não são armazenadas localmente e sim
                 em um banco de dados externo, com isso será necessário o uso de uma biblioteca de instruções MySQL para
                 ler, incluir, excluir e atualizar os dados. As informações serão trazidas através de uma <i>query</i>
                 (chamada) SQL <tt>"SELECT * FROM pessoa"</tt>, dessa forma será necessário ler todas as linhas da tabela,
                 usando a query <tt> mysql_fetch_row</tt> que depois poderá ser convertida para o formato desejado definido
-                pelo handler.<br>
-                Abaixo segue o passo a passo de como funciona todo o mecanismo do FederatedX:
+                pelo handler.</p>
+                <p style="color: #FFFFFF">Abaixo segue o passo a passo de como funciona todo o mecanismo do FederatedX:
             </p>
-            <div class="federated">
+            <div>
                 <img src="images/SE-image.png">
             </div>
             <br>
@@ -318,7 +327,9 @@
                 Tenha em mente que o servidor não garante exclusões consecutivas. Requisições com ORDER BY podem ser usadas.
             </p>
         </div>
+        
     </section>
+	
 
 
 	   <!-- ===================== explicacao threads ================================= -->
