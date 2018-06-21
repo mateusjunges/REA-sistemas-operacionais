@@ -1,8 +1,3 @@
-/* ===================================================================
- * Glint - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function($) {
 
     "use strict";
@@ -211,13 +206,13 @@
 
         $('.sobrenos').slick({
             arrows: false,
+            autoPlay: true,
             dots: true,
             infinite: true,
             slidesToShow: 6,
             slidesToScroll: 2,
-            //autoplay: true,
             pauseOnFocus: false,
-            autoplaySpeed: 1000,
+            autoplaySpeed: 4000,
             responsive: [
                 {
                     breakpoint: 1200,
@@ -250,14 +245,15 @@
         });
 
         $('.it').slick({
+            autoplay: true,
             arrows: true,
-            dots: false,
+            dots: true,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
             pauseOnFocus: false,
-            autoplaySpeed: 1500,
+            autoplaySpeed: 4000,
             responsive: [
                 {
                     breakpoint: 900,
