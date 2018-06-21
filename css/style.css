@@ -61,7 +61,19 @@
     width: 43%;
     height: 100%;
     text-align: justify;
+    font-size: 18px;
 }
 #code-explain-title{
     margin-top: -1.8%;
+}
+.code-threadpool{
+    display: inline-block;
+    width: 100%;
+    margin-right: -20px;
+}
+.code-threadpool-explain{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    text-align: justify;
 }

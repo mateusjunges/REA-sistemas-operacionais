@@ -372,7 +372,8 @@
 
                 <div class="ladolado">
                     <div class="code">
-                        <pre class="prettyprint lang-cpp">
+                        <pre class="prettyprint">
+                            <code class="language-cpp">
     struct mutex : private noncopyable {
         friend struct condition;
             mutex() {
@@ -397,7 +398,7 @@
         }
     private:
         mutable pthread_mutex_t mtx;
-    };
+    };                      </code>
                         </pre>
                     </div>
                     <div class="code-explain">
@@ -419,8 +420,45 @@
                         </p>
                     </div>
                 </div>
-                <div class="row introducao-desc" data-aos="fade-up">
-                    <!-- texto -->
+                <hr>
+                <div class="code-threadpool-explain">
+                    <h2 style="text-align: center">Threadpool</h2>
+                    <p>
+                        O sistema de threadpool é o sistema de threads do MariaDB.
+                        A principal vantagem de se usar threadpool é que ele geralmente
+                        limita o número de operações, através do <code class="ce">set_pool_size</code>,
+                        o que é normalmente configurado para o número de CPUs no servidor.
+                        Evita problemas de mudança de contexto e contenção com outras estruturas
+                        internas. É particularmente útil quando há muito mais consultas para executar do que
+                        o número de CPUs disponíveis. Também pode ser usado o <code class="ce">max-connections</code>
+                        para limitar o número de usuários que se conectam ao mesmo tempo, mas isso não
+                        limita efetivamente o número de consultas em execução.
+                    </p>
+                    <p>
+                        Porém, ao se utilizar o tamanho do pool de threads, todos os clientes podem se conectar,
+                        e executar suas consultas. Se todos eles tentarem executar uma consulta ao mesmo tempo,
+                        o conjunto de encadeamento automaticamente enfilerará as consultas e geralmente executará 10
+                        em paralelo.
+                    </p>
+                    <div class="code-threadpool">
+                        <pre class="prettyprint">
+                            <code class="language-cpp">
+struct TP_pool{
+    virtual ~TP_pool(){};
+    virtual int init()= 0;
+    virtual TP_connection *new_connection(CONNECT *)= 0;
+    virtual void add(TP_connection *c)= 0;
+    virtual int set_max_threads(uint){ return 0; }
+    virtual int set_min_threads(uint){ return 0; }
+    virtual int set_pool_size(uint){ return 0; }
+    virtual int set_idle_timeout(uint){ return 0; }
+    virtual int set_oversubscribe(uint){ return 0; }
+    virtual int set_stall_limit(uint){ return 0; }
+    virtual int get_thread_count() { return tp_stats.num_worker_threads; }
+    virtual int get_idle_thread_count(){ return 0; }
+};                          </code>
+                        </pre>
+                    </div>
                 </div>
             </div>
         </section>
