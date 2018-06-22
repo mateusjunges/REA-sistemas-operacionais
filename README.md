@@ -4,6 +4,8 @@
     <br>
     <h2>Alunos:</h2>
     <a href="https://mateusjunges.com">Mateus Junges</a>
+    <br>
     <a href="https://github.com/rafamttz">Rafael de Mattos</a>
+    <br>
     <a href="https://github.com/victorbegha">Victor Begha</a>
 </div>
