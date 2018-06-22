@@ -1,17 +1,11 @@
 <h1>Repositório Educacional Aberto - MariaDB</h1>
 <div>
-    <h1>Informações para editar o projeto:</h1>
-    <ol>
-        <li>Instalar o git no PC</li>
-        <li>git clone https://github.com/mateusjunges/REA-sistemas-operacionais.git</li>
-        <li>git config --global user.name SEU_NOME</li>
-        <li>git config --global user.emial SEU_EMAIL</li>
-        <li>git checkout dev</li>
-    </ol>
-    <h1>Após fazer alterações no projeto:</h1>
-    <ol>
-        <li>git add .</li>
-        <li>git commit -m "MENSAGEM_DO_COMMIT"</li>
-        <li>git push origin dev</li>
-    </ol>
+    <p>Trabalho realizado como requisito parcial para obtenção de nota na disciplina de Sistemas Operacionais, no curso de Engenharia de Computação da Universidade Estadual de Ponta Grossa, sob a supervisão do professor Dierone Foltran.</p>
+    <br>
+    <h2>Alunos:</h2>
+    <a href="https://mateusjunges.com">Mateus Junges</a>
+    <br>
+    <a href="https://github.com/rafamttz">Rafael de Mattos</a>
+    <br>
+    <a href="https://github.com/victorbegha">Victor Begha</a>
 </div>
