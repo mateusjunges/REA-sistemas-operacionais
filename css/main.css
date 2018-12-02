@@ -1,64 +1,3 @@
-/* =================================================================== 
- *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *      ## links
- *  # typography & general theme styles
- *      ## Lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## Spacing
- *      ## pace.js styles - minimal
- *  # preloader
- *  # forms
- *      ## style placeholder text
- *      ## change autocomplete styles in chrome
- *  # buttons
- *  # additional components
- *      ## alert box
- *      ## additional typo styles
- *      ## skillbars 
- *  # reusable and common theme styles
- *      ## display headings
- *      ## section header
- *      ## slick slider
- *  # header styles
- *      ## header logo
- *      ## main navigation 
- *      ## mobile menu toggle 
- *  # home 
- *      ## home content
- *      ## home social 
- *      ## home animations
- *  # introducao
- *      ## introducao stats
- *  # descs
- *      ## descs list
- *  # works
- *      ## bricks/masonry
- *  # sobrenos
- *      ## slider
- *      ## it
- *  # contact
- *      ## loader animation
- *  # footer
- *      ## footer main
- *      ## footer bottom
- *      ## go to top
- *
- *
- * =================================================================== */
-
-
-/* ===================================================================
- * # base style overrides
- *
- * ------------------------------------------------------------------- */
 html {
     font-size: 10px;
 }
@@ -80,14 +19,14 @@ body {
     font-style: normal;
     font-weight: normal;
     line-height: 1.765;
-    color: #757575;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
 
 /* ------------------------------------------------------------------- 
- * ## links
+ * # links
  * ------------------------------------------------------------------- */
 a {
     color: #0087cc;
@@ -96,13 +35,12 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: grey;
+    color: #353535;
 }
 
 a:hover, a:active {
     outline: 0;
 }
-
 
 
 /* ===================================================================
@@ -328,7 +266,7 @@ hr {
 
 
 /* ------------------------------------------------------------------- 
- * ## Lists
+ * # Lists
  * ------------------------------------------------------------------- */
 ol {
     list-style: decimal;
@@ -367,7 +305,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: grey;
+    background: #353535;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -376,7 +314,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: grey;
+    color: #353535;
 }
 
 dd {
@@ -385,7 +323,7 @@ dd {
 
 
 /* ------------------------------------------------------------------- 
- * ## responsive video container
+ * # responsive video container
  * ------------------------------------------------------------------- */
 .video-container {
     position: relative;
@@ -407,7 +345,7 @@ dd {
 
 
 /* ------------------------------------------------------------------- 
- * ## floated image
+ * # floated image
  * ------------------------------------------------------------------- */
 img.pull-right {
     margin: 1.5rem 0 0 3rem;
@@ -419,7 +357,7 @@ img.pull-left {
 
 
 /* ------------------------------------------------------------------- 
- * ## tables
+ * # tables
  * ------------------------------------------------------------------- */
 table {
     border-width: 0;
@@ -458,7 +396,7 @@ th:last-child, td:last-child {
 
 
 /* ------------------------------------------------------------------- 
- * ## Spacing 
+ * # Spacing 
  * ------------------------------------------------------------------- */
 button, .btn {
     margin-bottom: 1.2rem;
@@ -487,7 +425,7 @@ form,
 
 
 /* ------------------------------------------------------------------- 
- * ## pace.js styles - minimal
+ * # pace.js styles - minimal
  * ------------------------------------------------------------------- */
 .pace {
     -webkit-pointer-events: none;
@@ -502,8 +440,7 @@ form,
 }
 
 .pace .pace-progress {
-    /*background: grey;*/
-    background: grey;
+    background: #353535;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -546,7 +483,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: grey;
+    background-color: #353535;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -737,7 +674,7 @@ label > input[type="radio"] {
 
 
 /* ------------------------------------------------------------------- 
- * ## style placeholder text
+ * # style placeholder text
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
     color: #828282;
@@ -763,7 +700,7 @@ label > input[type="radio"] {
 
 
 /* ------------------------------------------------------------------- 
- * ## change autocomplete styles in chrome
+ * # change autocomplete styles in chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -773,7 +710,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: grey;
+    -webkit-text-fill-color: #353535;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -833,8 +770,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: grey;
-    border-color: grey;
+    background: #353535;
+    border-color: #353535;
     color: #FFFFFF;
 }
 
@@ -848,8 +785,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: #33a242;
-    border-color: #33a242;
+    background: #353535;
+    border-color: #353535;
 }
 
 
@@ -873,8 +810,8 @@ input[type="button"].btn--primary:focus {
 
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid grey;
-    color: grey;
+    border: 0.2rem solid #353535;
+    color: #353535;
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
@@ -901,7 +838,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## alert box
+ * # alert box
  * ------------------------------------------------------------------- */
 .alert-box {
     padding: 2.1rem 4rem 2.1rem 3rem;
@@ -946,7 +883,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## additional typo styles 
+ * # additional typo styles 
  * ------------------------------------------------------------------- */
 
 
@@ -1102,7 +1039,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: grey;
+    color: #353535;
 }
 
 .stats-tabs li a em {
@@ -1115,7 +1052,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## skillbars 
+ * # skillbars 
  * ------------------------------------------------------------------- */
 .skill-bars {
     list-style: none;
@@ -1211,7 +1148,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## display headings
+ * # display headings
  * ------------------------------------------------------------------- */
 .display-1 {
     font-family: "montserrat-medium", sans-serif;
@@ -1229,8 +1166,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-family: "montserrat-medium", sans-serif;
     font-size: 5.2rem;
     line-height: 1.255;
-    color: #000000;
+    color: white;
     margin-top: 0;
+}
+.display-2--dark{
+    background: #4f4f4f;
 }
 
 .display-2--light {
@@ -1247,9 +1187,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    /*color: grey;*/
+    color: #353535;
     margin-top: 0;
-    color: grey;
     margin-bottom: 0;
 }
 
@@ -1303,7 +1242,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## section header
+ * # section header
  * ------------------------------------------------------------------- */
 .section-header {
     text-align: center;
@@ -1353,7 +1292,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-    .s-sobrenos {
+    .s-sobre-nos {
         padding-bottom: 17.4rem;
     }
     .section-header.has-bottom-sep::before {
@@ -1372,7 +1311,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## slick slider 
+ * # slick slider 
  * ------------------------------------------------------------------- */
 .slick-slider .slick-slide {
     outline: none;
@@ -1422,7 +1361,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: grey;
+    background: #353535;
 }
 
 
@@ -1442,7 +1381,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* -------------------------------------------------------------------
- * ## header logo
+ * # header logo
  * ------------------------------------------------------------------- */
 .header-logo {
     display: inline-block;
@@ -1470,7 +1409,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## main navigation 
+ * # main navigation 
  * ------------------------------------------------------------------- */
 .header-nav {
     background: #0C0C0C;
@@ -1515,7 +1454,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: grey;
+    color: #353535;
 }
 
 .header-nav p {
@@ -1640,7 +1579,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## mobile menu toggle 
+ * # mobile menu toggle 
  * ------------------------------------------------------------------- */
 .header-menu-toggle {
     position: fixed;
@@ -1653,7 +1592,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: grey;
+    color: #353535;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1780,7 +1719,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## home content
+ * # home content
  * ------------------------------------------------------------------- */
 .home-content {
     display: table-cell;
@@ -1861,8 +1800,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid grey;
-    border-right: 2px solid grey;
+    border-bottom: 2px solid #353535;
+    border-right: 2px solid #353535;
     content: '';
     display: block;
     height: 8px;
@@ -1886,7 +1825,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: grey;
+    background-color: #353535;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -1894,8 +1833,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## home social 
+ * # home social 
  * ------------------------------------------------------------------- */
+.home-social {
+    font-family: "montserrat-regular", sans-serif;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 5.4rem;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
 
 .home-social a {
     color: white;
@@ -1935,7 +1885,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: grey;
+    color: #353535;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -1975,7 +1925,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## home animations
+ * # home animations
  * ------------------------------------------------------------------- */
 
 
@@ -2185,22 +2135,22 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # introducao
+ * # about
  *
  * ------------------------------------------------------------------- */
-.s-introducao {
+.s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: grey;
+    background-color: #353535;
     color: #010507;
     position: relative;
 }
 
-.s-introducao .section-header.has-bottom-sep::before {
+.s-about .section-header.has-bottom-sep::before {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.introducao-desc {
+.about-desc {
     font-size: 2.4rem;
     line-height: 1.75;
     text-align: center;
@@ -2209,9 +2159,9 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## introducao stats
+ * # about stats
  * ------------------------------------------------------------------- */
-.introducao-stats {
+.about-stats {
     text-align: center;
 }
 
@@ -2248,7 +2198,7 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
-.introducao__line {
+.about__line {
     display: block;
     width: 2px;
     height: 10.2rem;
@@ -2261,18 +2211,18 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * introducao
+ * about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .introducao-desc {
+    .about-desc {
         font-size: 2.2rem;
         max-width: 940px;
     }
-    .introducao-stats {
+    .about-stats {
         padding-top: 3rem;
         padding-bottom: 3.9rem;
     }
-    .introducao-stats {
+    .about-stats {
         max-width: 800px;
     }
     .stats__col {
@@ -2287,7 +2237,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 800px) {
-    .introducao-desc {
+    .about-desc {
         font-size: 2rem;
         max-width: 600px;
     }
@@ -2300,19 +2250,19 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 700px) {
-    .introducao__line {
+    .about__line {
         right: 5.5rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-introducao {
+    .s-about {
         padding-top: 12rem;
     }
-    .introducao-desc {
+    .about-desc {
         font-size: 1.9rem;
     }
-    .introducao-stats {
+    .about-stats {
         padding-top: 0;
     }
     .stats__col {
@@ -2338,13 +2288,13 @@ html.no-csstransitions .home-content__main {
     .stats__col:nth-child(n) {
         border: none;
     }
-    .introducao__line {
+    .about__line {
         height: 7.2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .introducao-desc {
+    .about-desc {
         font-size: 1.8rem;
     }
     .stats__count {
@@ -2368,7 +2318,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## descs list
+ * # descs list
  * ------------------------------------------------------------------- */
 .descs-list {
     margin-top: 6rem;
@@ -2396,7 +2346,7 @@ html.no-csstransitions .home-content__main {
 
 .descs-list .desc-icon {
     float: left;
-    color: grey;
+    color: #353535;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2479,29 +2429,30 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # works
+ * # funcionamento
  *
  * ------------------------------------------------------------------- */
-.s-works {
-    background: #FFFFFF;
+.s-funcionamento {
+    background: gray;
     padding: 0 0 15rem 0;
     min-height: 800px;
     position: relative;
 }
 
-.s-works .intro-wrap {
-    padding: 15rem 0 25.2rem;
-    background: #111111;
+.s-funcionamento .intro-wrap {
+    /*padding: 15rem 0 25.2rem;*/
+    background: gray;
+    color: white;
 }
 
-.works-content {
+.funcionamento-content {
     max-width: 1160px;
     margin-top: -23.4rem;
 }
 
 
 /* ------------------------------------------------------------------- 
- * ## bricks/masonry
+ * # bricks/masonry
  * ------------------------------------------------------------------- */
 .masonry:after {
     content: "";
@@ -2687,7 +2638,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * works
+ * funcionamento
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
     .item-folio__title, .item-folio__cat {
@@ -2696,13 +2647,13 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-works {
+    .s-funcionamento {
         padding-bottom: 12rem;
     }
-    .s-works .intro-wrap {
-        padding: 12rem 0 25.2rem;
+    .s-funcionamento .intro-wrap {
+        /*padding: 12rem 0 25.2rem;*/
     }
-    .works-content {
+    .funcionamento-content {
         margin-top: -25.2rem;
     }
     .masonry__brick {
@@ -2717,10 +2668,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # sobrenos
+ * # sobre-nos
  *
  * ------------------------------------------------------------------- */
-.s-sobrenos {
+.s-sobre-nos {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
     background-color: #e6e6e6;
@@ -2730,16 +2681,16 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## slider
+ * # slider
  * ------------------------------------------------------------------- */
-.sobrenos-outer {
+.sobre-nos-outer {
     margin-top: 3.6rem;
     padding-bottom: 9rem;
     text-align: center;
     position: relative;
 }
 
-.sobrenos__slide {
+.sobre-nos__slide {
     display: block;
     opacity: .55;
     padding: 1.5rem 2.8rem;
@@ -2747,22 +2698,22 @@ html.no-csstransitions .home-content__main {
     transition: opacity 0.5s ease-in-out;
 }
 
-.sobrenos__slide:hover, .sobrenos__slide:focus {
+.sobre-nos__slide:hover, .sobre-nos__slide:focus {
     opacity: 1;
 }
 
 
 /* ------------------------------------------------------------------- 
- * ## it
+ * # testimonials
  * ------------------------------------------------------------------- */
-.sobrenos-it {
+.sobre-nos-testimonials {
     margin-top: 4.2rem;
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
 }
 
-.sobrenos-it::before {
+.sobre-nos-testimonials::before {
     content: "";
     display: block;
     height: 1px;
@@ -2777,11 +2728,11 @@ html.no-csstransitions .home-content__main {
     transform: translateX(-50%);
 }
 
-.sobrenos-it .it {
+.sobre-nos-testimonials .testimonials {
     margin: 0 10%;
 }
 
-.sobrenos-it .it p {
+.sobre-nos-testimonials .testimonials p {
     font-family: "lora-regular", serif;
     font-size: 3rem;
     line-height: 1.8;
@@ -2789,34 +2740,33 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 6rem;
 }
 
-.sobrenos-it .it__slide {
+.sobre-nos-testimonials .testimonials__slide {
     padding: 0 0 3rem 0;
 }
 
-.sobrenos-it .it__avatar {
+.sobre-nos-testimonials .testimonials__avatar {
     height: 8.4rem;
     width: 8.4rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
 
-.sobrenos-it .it__name, 
-.sobrenos-it .it__pos {
+.sobre-nos-testimonials .testimonials__name, 
+.sobre-nos-testimonials .testimonials__pos {
     display: block;
-    color: black;
 }
 
-.sobrenos-it .it__name {
+.sobre-nos-testimonials .testimonials__name {
     font-family: "montserrat-semibold", sans-serif;
     color: #000000;
 }
 
-.sobrenos-it .it__pos {
+.sobre-nos-testimonials .testimonials__pos {
     font-family: "montserrat-light", sans-serif;
     font-size: 1.4rem;
 }
 
-.sobrenos-it .it .slick-arrow {
+.sobre-nos-testimonials .testimonials .slick-arrow {
     position: absolute;
     top: 7.2rem;
     width: 66px;
@@ -2837,82 +2787,82 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
 }
 
-.sobrenos-it .it .slick-prev {
+.sobre-nos-testimonials .testimonials .slick-prev {
     left: -130px;
     background-image: url("../images/left-arrow.png");
 }
 
-.sobrenos-it .it .slick-next {
+.sobre-nos-testimonials .testimonials .slick-next {
     right: -130px;
     background-image: url("../images/right-arrow.png");
 }
 
-.sobrenos-it .it .slick-dots {
+.sobre-nos-testimonials .testimonials .slick-dots {
     margin-top: -0.6px;
 }
 
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * sobrenos
+ * sobre-nos
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .sobrenos-it .it {
+    .sobre-nos-testimonials .testimonials {
         margin: 0 12%;
     }
-    .sobrenos-it .it p {
+    .sobre-nos-testimonials .testimonials p {
         font-size: 2.6rem;
     }
-    .sobrenos-it .it .slick-prev {
+    .sobre-nos-testimonials .testimonials .slick-prev {
         left: -100px;
     }
-    .sobrenos-it .it .slick-next {
+    .sobre-nos-testimonials .testimonials .slick-next {
         right: -100px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .sobrenos-it .it p {
+    .sobre-nos-testimonials .testimonials p {
         font-size: 2.2rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .sobrenos-it::before {
+    .sobre-nos-testimonials::before {
         width: 400px;
     }
-    .sobrenos-it .it {
+    .sobre-nos-testimonials .testimonials {
         margin: 0 2rem;
     }
-    .sobrenos-it .it .slick-arrow {
+    .sobre-nos-testimonials .testimonials .slick-arrow {
         top: auto;
         bottom: 3rem;
     }
-    .sobrenos-it .it .slick-prev {
+    .sobre-nos-testimonials .testimonials .slick-prev {
         left: 0;
     }
-    .sobrenos-it .it .slick-next {
+    .sobre-nos-testimonials .testimonials .slick-next {
         right: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .s-sobrenos {
+    .s-sobre-nos {
         padding-top: 12rem;
     }
-    .sobrenos-it::before {
+    .sobre-nos-testimonials::before {
         width: 250px;
     }
-    .sobrenos-it .it {
+    .sobre-nos-testimonials .testimonials {
         margin: 0;
     }
-    .sobrenos-it .it p {
+    .sobre-nos-testimonials .testimonials p {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .sobrenos-it .it p {
+    .sobre-nos-testimonials .testimonials p {
         font-size: 1.9rem;
     }
 }
@@ -2966,7 +2916,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: grey;
+    background: #353535;
 }
 
 .s-contact .form-field label::after {
@@ -2977,14 +2927,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid grey;
+    border-right: 5px solid #353535;
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: grey;
+    background-color: #353535;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3011,7 +2961,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: grey;
+    color: #353535;
 }
 
 .contact-content input[type="email"],
@@ -3038,7 +2988,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #353535;
 }
 
 .contact-content button,
@@ -3129,7 +3079,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: grey;
+    color: #353535;
 }
 
 .contact-social li:last-child {
@@ -3152,7 +3102,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .message-success {
-    color: grey;
+    color: #353535;
 }
 
 .message-warning i, .message-success i {
@@ -3194,7 +3144,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* --------------------------------------------------------------- 
- * ## loader animation 
+ * # loader animation 
  * --------------------------------------------------------------- */
 .s-loader {
     margin: 1.2rem auto 3rem;
@@ -3344,7 +3294,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus, footer a:active {
-    color: grey;
+    color: #353535;
 }
 
 footer .row {
@@ -3353,10 +3303,10 @@ footer .row {
 
 
 /* --------------------------------------------------------------- 
- * ## footer main
+ * # footer main
  * --------------------------------------------------------------- */
 .footer-main {
-    /*text-align: center;*/
+    text-align: left;
 }
 
 .footer-main .left {
@@ -3364,27 +3314,25 @@ footer .row {
 }
 
 .footer-main .right {
-    /*padding-left: 40px;*/
+    padding-left: 40px;
 }
 
 .footer-logo {
     display: block;
     margin: -.6rem 0 3.6rem 0;
     padding: 0;
-    color: #FFFFFF;
     outline: 0;
     border: none;
     width: 85px;
-    height: 28px;
-    /*background: url("../images/logo-footer.png") no-repeat center;*/
-    background-size: 85px 28px;
+    height: 100px;
+    background: url("../images/img/logo-footer2.png") no-repeat center;
+    background-size: 100px 85px;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
 
 .footer-subscribe .subscribe-form {
     margin: 0;
@@ -3396,11 +3344,70 @@ footer .row {
     width: 100%;
 }
 
+.footer-subscribe #mc-form input[type="email"] {
+    width: 100%;
+    height: 5.4rem;
+    padding: 1.2rem 160px 1.2rem 60px;
+    background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    background-size: 24px 16px, auto;
+    border: none;
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-subscribe #mc-form input[type="email"]:focus {
+    color: #FFFFFF;
+}
+
+.footer-subscribe #mc-form input[type="email"]::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-subscribe #mc-form input[type="email"]:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    /* Firefox 18- */
+}
+
+.footer-subscribe #mc-form input[type="email"]::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    /* Firefox 19+ */
+}
+
+.footer-subscribe #mc-form input[type="email"]:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-subscribe #mc-form input[type="email"].placeholder {
+    color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.footer-subscribe #mc-form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFFFFF;
+    background: #353535;
+    border-color: #353535;
+    padding: 0 20px;
+}
+
+.footer-subscribe #mc-form label {
+    color: #FFFFFF;
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1.3rem;
+    padding: 0 2rem;
+}
+
+.footer-subscribe #mc-form label i {
+    padding-right: 6px;
+}
+
 
 /* ---------------------------------------------------------------
- * ## footer bottom
+ * # footer bottom
  * --------------------------------------------------------------- */
 .footer-bottom {
+    margin-top: 5.4rem;
     text-align: center;
     font-size: 14px;
 }
@@ -3422,7 +3429,7 @@ footer .row {
 
 
 /* ------------------------------------------------------------------- 
- * ## go to top
+ * # go to top
  * ------------------------------------------------------------------- */
 .go-top {
     position: fixed;
@@ -3533,6 +3540,3 @@ footer .row {
         padding-left: 0;
     }
 }
-
-
-/*# sourceMappingURL=main.css.map */
