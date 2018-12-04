@@ -293,7 +293,9 @@
                     o new_data terá os dados mais recentes. Tenha em mente que o servidor pode fazer atualizações com base em requisições se um ORDER BY for usado. A requisição
                     não é garantida.
                 </p>
-                <code style="font-size: 12px">int ha_federatedx::</code><code>delete_row(const uchar *buf)</code> <br>
+                <code style="font-size: 12px">int ha_federatedx::</code>
+				<br>
+				<code>delete_row(const uchar *buf)</code><br>
                 <p>
                     Acredite se quiser, esta função apaga uma linha! <code style="color: #000000">buf</code> conterá uma cópia da linha a ser excluída. O servidor irá chamar isto logo após a linha atual ter sido chamada
                     (de ou uma chamada <code style="color: #000000">rnd_next()</code> ou de índice anterior). Se você mantiver um ponteiro para a última linha ou puder acessar uma primary_key faça a eliminação um pouco mais fácil.
