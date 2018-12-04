@@ -266,7 +266,7 @@
                     deleção, e  claro, a busca.
                     Clique em um trecho de código para ver com mais detalhes como é a implementação:
                 </p>
-                <code>int ha_federatedx::write_row(uchar *buf);</code>
+                <code style="font-size: 10px;">int ha_federatedx::write_row(uchar *buf);</code>
                 <p>
                     O método acima tem a função de acrescentar uma linha na tabela, através do parâmetro <code style="color: #000000">*buf</code>
                     que chama a função <code style="color: #000000">buf()</code> que retorna um byte de dados de um array podendo utilizar esses dados
@@ -280,20 +280,20 @@
                     que seriam inseridas na tabela o retorno será 0, caso contrário será o número de linhas. Deve-se lembrar que ao terminar essa preparação é necessário
                     que o método <code style="color: #000000">int ha_federatedx::end_bulk_insert()</code> seja chamado para finalizar a preparação.
                 </p>
-                <code style="font-size: 12px">void ha_federatedx::update_auto_increment(void);</code><br>
+                <code style="font-size: 10px">void ha_federatedx::update_auto_increment(void);</code><br>
                 <p>
                     Esta função tem o dever de garantir ao banco de dados externo funcione correramente em relação as inserções na tabela. Sempre
                     após uma inserção a função chama uma outra função chamada <code style="color: #000000">last_insert_id()</code> que definirá um novo id no campo que é
                     auto_increment, esse processo é feito via <code style="color: #000000">thd-> insert_id (ID))</code>.
                 </p>
-                <code>int ha_federatedx::update_row(const uchar</code>
+                <code style="font-size: 10px">int ha_federatedx::update_row(const uchar</code>
                 <code> *old_data, const uchar *new_data)</code> <br>
                 <p>
                     Sim, o <code style="color: #000000">update_row()</code> faz o que você espera, atualiza uma linha.<b>"UUUUAAAAU"</b>. O old_data terá o registro da linha anterior, enquanto
                     o new_data terá os dados mais recentes. Tenha em mente que o servidor pode fazer atualizações com base em requisições se um ORDER BY for usado. A requisição
                     não é garantida.
                 </p>
-                <code style="font-size: 12px">int ha_federatedx::delete_row(const uchar *buf)</code> <br>
+                <code style="font-size: 12px">int ha_federatedx::</code><code>delete_row(const uchar *buf)</code> <br>
                 <p>
                     Acredite se quiser, esta função apaga uma linha! <code style="color: #000000">buf</code> conterá uma cópia da linha a ser excluída. O servidor irá chamar isto logo após a linha atual ter sido chamada
                     (de ou uma chamada <code style="color: #000000">rnd_next()</code> ou de índice anterior). Se você mantiver um ponteiro para a última linha ou puder acessar uma primary_key faça a eliminação um pouco mais fácil.
